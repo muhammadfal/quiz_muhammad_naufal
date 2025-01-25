@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Edit User')
+@section('title', 'Edit Kader')
 
 @section('content')
 <div class="container">
-    <h1 class="mb-4">Edit User</h1>
+    <h1 class="mb-4">Edit Kader</h1>
 
     <form action="{{ route('user.update', $user->user_id) }}" method="POST">
         @csrf
@@ -14,7 +14,7 @@
             <input type="email" class="form-control" id="user_email" name="user_email" value="{{ $user->user_email }}" required>
         </div>
         <div class="mb-3">
-            <label for="user_nama" class="form-label">Nama</label>
+            <label for="user_nama" class="form-label">Nama Kader</label>
             <input type="text" class="form-control" id="user_nama" name="user_nama" value="{{ $user->user_nama }}" required>
         </div>
         <div class="mb-3">
@@ -26,7 +26,7 @@
             <input type="text" class="form-control" id="user_hp" name="user_hp" value="{{ $user->user_hp }}">
         </div>
         <div class="mb-3">
-            <label for="user_role" class="form-label">Role</label>
+            <label for="user_role" class="form-label">Jabatan</label>
             <input type="number" class="form-control" id="user_role" name="user_role" value="{{ $user->user_role }}" required>
         </div>
         <button type="submit" class="btn btn-warning">Update</button>

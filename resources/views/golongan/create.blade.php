@@ -2,15 +2,15 @@
 
 @section('content')
 <div class="container">
-    <h1>Tambah Data Golongan</h1>
+    <h1>Tambah Data Balita</h1>
     <form action="{{ route('golongan.store') }}" method="POST">
         @csrf
         <div class="form-group">
-            <label for="gol_kode">Kode Golongan</label>
+            <label for="gol_kode">Nama Balita</label>
             <input type="text" name="gol_kode" class="form-control" required>
         </div>
         <div class="form-group">
-            <label for="gol_nama">Nama Golongan</label>
+            <label for="gol_nama">Nama Orang Tua</label>
             <input type="text" name="gol_nama" class="form-control" required>
         </div>
         <button type="submit" class="btn btn-primary">Simpan</button>

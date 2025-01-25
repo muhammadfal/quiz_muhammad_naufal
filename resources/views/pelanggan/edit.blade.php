@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
-@section('title', 'Edit Pelanggan')
+@section('title', 'Edit Pemeriksaan')
 
 @section('content')
 <div class="container">
-    <h1 class="mb-4">Edit Pelanggan</h1>
+    <h1 class="mb-4">Edit Pemeriksaan</h1>
 
     <form action="{{ route('pelanggan.update', $pelanggan->pel_id) }}" method="POST">
         @csrf
         @method('PUT')
 
         <div class="mb-3">
-            <label for="pel_no" class="form-label">No Pelanggan</label>
+            <label for="pel_no" class="form-label">No Pemeriksaan</label>
             <input type="text" class="form-control" id="pel_no" name="pel_no" value="{{ $pelanggan->pel_no }}" required>
         </div>
 

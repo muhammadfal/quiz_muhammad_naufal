@@ -76,7 +76,7 @@
 
     
     <div class="footer">
-        &copy; Muhammad Naufal
+        &copy; Sistem Informasi Posyandu 2025
     </div>
 
     

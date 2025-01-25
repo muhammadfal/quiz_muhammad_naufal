@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'Tambah Pelanggan')
+@section('title', 'Tambah Pemeriksaan')
 
 @section('content')
 <div class="container">
-    <h1 class="mb-4">Tambah Pelanggan</h1>
+    <h1 class="mb-4">Tambah Pemeriksaan</h1>
 
     <form action="{{ route('pelanggan.store') }}" method="POST">
         @csrf
         <div class="mb-3">
-            <label for="pel_no" class="form-label">No Pelanggan</label>
+            <label for="pel_no" class="form-label">No Pemeriksaan</label>
             <input type="text" class="form-control" id="pel_no" name="pel_no" required>
         </div>
 

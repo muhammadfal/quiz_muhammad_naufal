@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Data Pelanggan')
+@section('title', 'Data Pemeriksaan')
 
 @section('content')
 <div class="container">
-    <h1 class="mb-4">Data Pelanggan</h1>
+    <h1 class="mb-4">Data Pemeriksaan</h1>
 
-    <a href="{{ route('pelanggan.create') }}" class="btn btn-primary mb-3">Tambah Pelanggan</a>
+    <a href="{{ route('pelanggan.create') }}" class="btn btn-primary mb-3">Tambah Pemeriksaan</a>
 
     @if (session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
@@ -16,12 +16,12 @@
     <thead>
         <tr>
             <th>No</th>
-            <th>No Pelanggan</th>
-            <th>Nama</th>
+            <th>Tanggal Pemeriksaan</th>
+            <th>Nama Balita</th>
             <th>Alamat</th>
+            <th>Nama Orang Tua</th>
+            <th>Golongan Darah</th>
             <th>No HP</th>
-            <th>Golongan</th>
-            <th>User</th>
             <th>Status</th>
             <th>Opsi</th>
         </tr>

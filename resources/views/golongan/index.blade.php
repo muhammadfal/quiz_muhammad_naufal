@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="container">
-    <h1>Data Golongan</h1>
+    <h1>Data Balita</h1>
 
-    <a href="{{ route('golongan.create') }}" class="btn btn-primary mb-3">Tambah Golongan</a>
+    <a href="{{ route('golongan.create') }}" class="btn btn-primary mb-3">Tambah Balita</a>
 
    
     @if (session('success'))
@@ -18,8 +18,8 @@
         <thead>
             <tr>
                 <th>No</th>
-                <th>Kode Golongan</th>
-                <th>Nama Golongan</th>
+                <th>Nama balita</th>
+                <th>Nama Orang Tua</th>
                 <th>Opsi</th>
             </tr>
         </thead>

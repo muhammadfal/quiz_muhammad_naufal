@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Tambah User')
+@section('title', 'Tambah Kader')
 
 @section('content')
 <div class="container">
-    <h1 class="mb-4">Tambah User</h1>
+    <h1 class="mb-4">Tambah Kader</h1>
 
     <form action="{{ route('user.store') }}" method="POST">
         @csrf
@@ -17,7 +17,7 @@
             <input type="password" class="form-control" id="user_password" name="user_password" required>
         </div>
         <div class="mb-3">
-            <label for="user_nama" class="form-label">Nama</label>
+            <label for="user_nama" class="form-label">Nama Kader</label>
             <input type="text" class="form-control" id="user_nama" name="user_nama" required>
         </div>
         <div class="mb-3">
@@ -33,7 +33,7 @@
             <input type="text" class="form-control" id="user_pos" name="user_pos" maxlength="5" required>
         </div>
         <div class="mb-3">
-            <label for="user_role" class="form-label">Role</label>
+            <label for="user_role" class="form-label">Jabatan</label>
             <input type="number" class="form-control" id="user_role" name="user_role" min="1" max="2" required>
         </div>
         <div class="mb-3">

@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Data User')
+@section('title', 'Data Kader')
 
 @section('content')
 <div class="container">
-    <h1 class="mb-4">Data User</h1>
+    <h1 class="mb-4">Data Kader</h1>
 
     <!-- Tombol Tambah User -->
-    <a href="{{ route('user.create') }}" class="btn btn-primary mb-3">Tambah User</a>
+    <a href="{{ route('user.create') }}" class="btn btn-primary mb-3">Tambah Kader</a>
 
     <!-- Pesan Flash -->
     @if (session('success'))
